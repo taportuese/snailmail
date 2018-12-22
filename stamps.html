@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/snailmail.css" />
+        <link rel="stylesheet" href="https://use.typekit.net/geb0ywj.css">
+
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/parallax.js"></script>
+		<script type="text/javascript" src="js/snailmail.js"></script>
+		
+		<title>Snail Mail - Stamps</title>
+	</head>
+
+	<body class="blue">
+        <div class="container">
+        
+        <div class="logo">
+            <a href="index.html"><img src="images/logo_white.svg"></a>
+        </div>
+        <div class="menu">
+            <p id="menu">
+                <a href="prompts.html" class="menulinkwhite">PROMPTS</a>
+                <a href="stamps.html" class="menulinkwhite">STAMPS</a>
+                <a href="letters.html" class="menulinkwhite">INSPO</a>
+                <a href="index.html" class="menulinkwhite">HOME</a>
+            </p>
+        </div>
+        <div class="instructions">
+            <p class="instructionsp">These are notable or interesting stamps from different eras and different countries. Hover over one to learn more. </p>
+        </div>
+        <div id="stamplayer1">
+			<div data-depth="2" id="stampone">
+                <img src="images/redmercury.png" id="redmercury">
+                <p class="stampdescription" id="redmercuryp">RED MERCURY - 1856<br><br>These Austrian stamps depicting Mercury were newspaper postage stamps. Each of these rare stamps are worth roughly $40k.</p>
+            </div>
+			<div data-depth="9" id="stamptwo">
+                <img src="images/forever.png" id="forever">
+                <p class="stampdescription" id="foreverp">LIBERTY BELL FOREVER - 2007<br><br>This stamp marks the beginning of United States Postal Service's Forever Stamp program.</p>
+            </div>
+            <div data-depth="1" id="stampthree">
+                <img src="images/invertedjenny.png" id="invertedjenny">
+                <p class="stampdescription" id="invertedjennyp">INVERTED JENNY - 1918<br><br>This misprinted stamp became highly collectible for its upside-down airplanes. Only 100 were printed.</p>
+            </div>
+            <div data-depth="4" id="stampfour">
+                <img src="images/wpa.png" id="wpa">
+                <p class="stampdescription" id="wpap">WPA POSTERS - 2017<br><br>Work by artists in the Depression era created these poster designs celebrating the Works Progress Administration.</p>
+            </div>
+            <div data-depth="3" id="stampfive">
+                <img src="images/pacific97.png" id="pacific97">
+                <p class="stampdescription" id="pacific97p">PACIFIC 97 - 1997<br><br>Known for being the first U.S. triangular stamps.</p></div>
+            <div data-depth="3" id="stampsix">
+                <img src="images/brontosaurus.png" id="brontosaurus">
+                <p class="stampdescription" id="brontosaurusp">DINOSAURS - 1989<br><br>This stamp was controversial in the scientific community, for the depicted creatures were apatosauruses, not brontosauruses as labelled.</p>
+            </div>
+		</div>
+        <div class="footer white">
+            <p class="creditblue">project by <a class="footerlinkblue" href="http://tportuese.com" target="_blank">tessa portuese</a></p>
+        </div>
+        </div>
+        
+        	<script>
+                var scene = $('#stamplayer1').get(0);
+                var parallaxInstance = new Parallax(scene, {
+                    relativeInput: true,
+                    pointerEvents: true,
+                    hoverOnly: false,
+
+                    invertX: true,
+                    inverY: true,
+
+                    frictionX: 0.1,
+                    frictionY: 0.1,
+
+                    originX: 0.5,
+                    originY: 0.5,
+
+                    limitX: false,
+                    limitY: false,
+
+                    scalarX: 5,
+                    scalarY: 5
+                });
+
+
+            </script>
+	</body>
+
+</html>
